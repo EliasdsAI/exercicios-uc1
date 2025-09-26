@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+         let numero = parseInt(prompt("Informe seu pedido:"));
+         let quantidade = parseInt(prompt("Informe a quantidade"));
+         let total = 0.0;
+        switch (numero){
+            case 10:
+                total= quantidade*40;
+                break;
+            case 11:
+                total= quantidade*150;
+                break;
+            case 12:
+                total= quantidade*15;
+                break;
+            case 13:    
+            total= quantidade*35;
+                break;
+            case 14:
+                total= quantidade*20;
+                break;
+                default:
+                    alert("Não encontrado");            
+        }
+        alert("O valor total é:" +total);
+    </script>
+</body>
+</html>

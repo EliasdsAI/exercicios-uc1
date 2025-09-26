@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let salario =parseFloat(prompt("coloque seu salario"));
+        let reajusteA =(salario + (salario * 15/100));
+        let reajusteB =(salario + (salario * 10/100));
+        let reajusteC =(salario + (salario * 5/100));
+        if (salario < 1500){
+            alert("seu novo salario é" + reajusteA + "\nteve reajuste 15%");            
+        } else if (salario >=1500 && salario <=2000){
+            alert("seu novo salario é" + reajusteB + "\nteve reajuste 10%");
+        } else if (salario > 3000){
+            alert("seu novo salario é" + reajusteC + "\nteve reajuste 5%");
+        }
+    </script>
+</body>
+</html>

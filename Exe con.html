@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let contatos= [];//criando o vetor array
+        function gravar(){
+            let number =parseInt(document.getElementById("n1").value);
+            contatos.push(number); //adcinando elemento
+            let result= (document.getElementById("resultado"));
+            result.innerHTML = saida();
+            //alert(contatos[0]); //Primeira posição do vetor
+            parseInt(document.getElementById("n1").value="");
+        } function saida(){
+            let retorno="";
+            for( let i=0; i < contatos.length; i=i+1){
+                retorno += contatos[i] +"</br>";
+            }
+            return retorno;
+        } function Somatorio(){
+         gravar();
+           let soma=;
+           alert(soma)
+        }
+    </script>
+</head>
+<body>
+    <input type="number" name="n1" id="n1"
+    placeholder="Informe o numero"/>
+    <input type="button" value="Gravar"
+    onclick="gravar()"/>
+    <input type="button" value="Soma"
+    onclick="Somatorio()"/>
+    <input type="button" value="Media"
+    onclick="media()"/>
+    <div id="resultado"></div>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /* o programa fará a leitra da idade e irá informar se a pessoa é jovem até os 18 anos, adulto entre 18 e 65 e idsa a partir de 65 anos */
+        let idade = parseInt(prompt("informe a idade"));
+        if (idade > 0 && idade <= 18) {
+            alert("Jovem");
+        } else if(idade > 18 && idade <=65) {
+            alert("Adulto");
+        } else if(idade > 65) {
+            alert("Idoso");
+        } else {
+            alert("idade inválida");
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Titulo da pagina</title>
+</head>
+<body>
+    <h1>Aula de Hoje</h1>
+    <script>
+        var anonasc = prompt("informe ano de nascimento");
+        var anoatual = prompt("informe ano atual");
+        var idade = parseInt(anoatual) - parseInt(anonasc);
+        var meses = idade * 12;
+        var dias = meses * 30;
+        alert("A sua idade em anos é: "+ idade + 
+        "\nA sua idade em meses é: " + meses +
+        "\nA sua idade em dias é: " + dias);
+        // (\n da espaço em cascada)
+    </script>
+</body>
+</html>
