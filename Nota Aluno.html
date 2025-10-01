@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script>
-        let estoque=[];
+        let aluno=[];
         function cadastrar(){
             let nome= document.getElementById("nome").value;
             let nota1= parseFloat(document.getElementById("nota1").value);
@@ -17,7 +17,7 @@
             } else{
                 situação=" reprovado";
             }
-            estoque.push(["O nome do aluno: "+ nome, "A nota 1 é: "+ nota1,"A nota 2: "+ nota2,"Sua média é: "+ media, situação]);
+            aluno.push(["O nome do aluno: "+ nome, "A nota 1 é: "+ nota1,"A nota 2: "+ nota2,"Sua média é: "+ media, situação]);
             let result= document.getElementById("resultado");
             result.innerHTML= saida();
             document.getElementById("nome").value="";
@@ -25,9 +25,9 @@
             document.getElementById("nota2").value="";
         } function saida(){
             let retorno="";
-            for(let x=0; x < estoque.length; x =x+1){
-                for(let y=0; y<estoque[x].length; y=y+1){
-                    retorno +=estoque[x][y]+ "</br>";
+            for(let x=0; x < aluno.length; x =x+1){
+                for(let y=0; y<aluno[x].length; y=y+1){
+                    retorno +=aluno[x][y]+ "</br>";
                 } retorno += "</br>";
             }
             return retorno;
@@ -48,4 +48,5 @@
     
     </form>
 </body>
+
 </html>
